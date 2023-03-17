@@ -1,0 +1,217 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    height: 100vh;  
+    background: hsl(0, 0%, 100%);
+}
+
+#first, #second {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+#result {
+    margin: 0;
+    padding: 30px 20px;
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    color: hsl(225, 20%, 60%);
+    background-image: linear-gradient(hsl(252, 100%, 67%) 10%, hsl(241, 81%, 54%) 90%);
+}
+
+#result h3 {
+    font-size: 1.375rem;
+    margin-bottom: 20px;
+    color: hsl(241, 100%, 89%);
+}
+
+#result h1 {
+    font-size: 1.375rem;
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+#result p {
+    color: hsl(241, 100%, 89%);
+}
+
+#circle {
+    width: 150px;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 90px;
+    border: 0;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+#circle span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%)
+}
+
+#summary {
+    margin: 0;
+    padding: 30px 10px;
+    border: 0;
+    color: hsl(225, 20%, 60%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+#summary h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: hsl(224, 30%, 27%)
+}
+
+#summary p {
+    margin-bottom: 7px;
+}
+
+#summary img {
+    margin-right: 10px;
+}
+
+#summary {
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+#reaction span {
+    color: hsl(0, 100%, 67%);
+}
+
+#memory span {
+    color: hsl(39, 100%, 56%);
+}
+
+#reaction, #memory {
+    background-color: #FAEBD7;
+}
+
+#verbal span {
+    color: hsl(166, 100%, 37%);
+}
+
+#visual span {
+    color: hsl(234, 85%, 45%);
+}
+
+#verbal, #visual {
+    background-color: hsl(221, 100%, 96%);
+}
+
+#summary .score {
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
+}
+
+#summary button {
+    width: 100%;
+    border: 0;
+    font-size: .9375rem;
+    border-radius: 90px;
+    margin-top: 15px;
+    padding: 10px 0 15px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+}
+
+#summary button:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+.attribution { 
+    font-size: .75rem; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+#footer {
+    margin: 30px 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 520px) {
+
+    #main {
+        margin: 30px 70px;
+    }
+
+    #result {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+
+    #result {
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+
+    #result {
+        padding: 30px 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+    }
+
+    #result {
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+    #summary {
+        padding: 30px;
+        border-radius: 0 10px 10px 0;
+        border-top: 1px solid #eee;
+        border-left: none;
+        box-shadow: 10px 10px 12px -15px hsl(166, 100%, 37%);
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+    #result {
+        padding: 30px 70px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #result {
+        padding: 30px 50px;
+    }
+}
